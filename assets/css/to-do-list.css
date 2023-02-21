@@ -33,7 +33,7 @@ body {
     width: 80%;
     height: 40px;
 
-    border: 2px solid rgba(34,96,203,255);
+    border: 2px solid rgba(182,191,196,255);
     border-radius: 4px;
     padding: 5px;
 
@@ -65,8 +65,10 @@ body {
     height: 60px;
     margin: 5px auto;
 
-    border: 2px solid black;
+    border: 2px solid rgba(182,191,196,255);
     border-radius: 4px;
+
+    background-color: rgba(199,224,229,255);
 }
 
 
@@ -84,7 +86,7 @@ body {
     width: 15%;
     height: 40px;
 
-    background-color: rgba(34,96,203,255);
+    background-color: rgba(29,27,162,255);
     color: white;
     border-style: none;
 
