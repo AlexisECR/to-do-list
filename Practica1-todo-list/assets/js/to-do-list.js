@@ -8,6 +8,7 @@ btn_agregar.addEventListener('click',function (e){
   if(inputElement.value.trim() !== ''){
         let inputTexto = inputElement.value;  
         crear_elementos(inputTexto);
+        inputElement.value = "";
     }  
 })
 
