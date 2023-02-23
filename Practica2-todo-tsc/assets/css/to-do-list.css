@@ -1,99 +1,82 @@
-/*{
+*{
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    font-family: sans-serif;
-    min-height: 100vh;
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+
     background-color: rgba(34,96,203,255);
 }
 
-.contenedor {
+.container{
     width: 600px;
-    height: 60vh;
-    margin: 80px auto;
-    
+    border:2px solid #cccccc;
+
     background-color: white;
     border: 2px solid white;
     border-radius: 4px;
     padding: 5px;
 }
 
-.contenedor .parte-superior {
-    width: 500px;
-    margin: 20px auto;
-    position: relative;
+.container-header{
+    display:grid;
+    grid-template-columns: 80% 1fr;
+    gap:10px;
+}
+
+.conteiner-header, .new-task{
+    padding: 8px;
+}
+
+.container-header, .container-body{
+    padding:20px;
+}
+
+.container-body, .container-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.task{
+    border: 1px solid #cecece;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(197,224,229,255);
+    border: 1px solid rgba(200,211,213,255);
+    border-radius: 4px;
+    padding: 5px;
+    
+
+}
+
+.task-description{
     
 }
 
-.contenedor .input-tarea {
-    position: absolute;
-    left: 0;
-
-    width: 80%;
-    height: 40px;
-
-    border: 2px solid rgba(182,191,196,255);
+.new-task{
+    background-color: white;
+    border: 2px solid rgba(44,107,236,255);
     border-radius: 4px;
     padding: 5px;
 
 }
 
-.contenedor .btn-agregar-tarea {
-     position: absolute;
-    right: 0;
-
-    width: 15%;
-    height: 40px;
-
-    background-color: rgba(34,96,203,255);
-    color: white;
-    border-style: none;
-
+.btn-add{
+    background-color: rgba(44,107,236,255);
+    border: 2px solid rgba(44,107,236,255);
     border-radius: 4px;
     padding: 5px;
+    color:white;
 }
-
-.parte-inferior {
-    height: 450px;
-    margin-top: 80px;
-    overflow: auto;
-}
-
-#div_tarea {
-    width: 500px;
-    height: 60px;
-    margin: 5px auto;
-
-    border: 2px solid rgba(182,191,196,255);
-    border-radius: 4px;
-
-    background-color: rgba(199,224,229,255);
-}
-
-
-.label_tarea{
-    float: left;
-
-    width: 80%;
-    height: 40px;
-    padding: 20px;
-}
-
-.btn_eliminar{
-    float: right;
-
-    width: 15%;
-    height: 40px;
-
-    background-color: rgba(29,27,162,255);
-    color: white;
-    border-style: none;
-
-    border-radius: 4px;
-    margin-top: 8px;
-    margin-right: 5px;
-}
-
-
-
