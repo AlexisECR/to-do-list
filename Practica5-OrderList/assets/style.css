@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(193,199,199);
+}
+
+.container {
+    width: 1233px;
+    height: 554px;
+    margin: auto;
+    transform: translate(0,15%);
+    
+}
+
+.title {
+    position: relative;
+    width: 1233px;
+    height: 55px;
+    border: 1px solid rgba(211,217,222,255);
+    padding: 17.5px;
+    border-bottom: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgba(239,243,248,255);
+    
+}
+
+.filter-container {
+    position: relative;
+    width: 1233px;
+    height: 79px;
+    border: 1px solid rgba(211,217,222,255);
+    padding: 17.5px;
+    border-bottom: 0;
+    background-color: white;
+}
+
+.filer{
+    width: 1196px;
+    height: 43px;
+    position: relative;
+}
+
+.filter input {
+    width: 100%;
+    height: 43px;
+    margin: 0;
+    padding: 10.5px;
+    padding-right: 24.5px;
+    border-radius: 5px;
+}
+ 
+.filter i{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(-100%,-50%);
+}
+
+.articles-container {
+    width: 1233px;
+    height: 420px;
+    border: 1px solid rgba(211,217,222,255);
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    overflow-y: auto;
+    background-color: white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+.list-articles {
+    width: 1214px;
+    height: 89px;
+    /* border: 1px solid black; */
+    padding: 10.5px 17.5px 10.5px 17.5px;
+    margin: auto;
+    align-items: center;
+}
+
+.article{
+    width: 100%;
+    height: 68px;
+    padding: 7px;
+    align-items: center;
+}
+
+.article:hover{
+    background-color: rgba(233,236,239,255);
+}
+
+.images {
+    display: inline-block; 
+    width: 8%; 
+}
+
+img {
+    width: 75px;
+    height: 50px;
+    margin-right: 1rem;
+    box-shadow: 0 3px 6px #00000029, 0 3px 6px #0000003b;
+}
+
+.description{
+    display: inline-block;
+    width: 83%; 
+}
+
+.description h5{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem
+}
+
+.description span{
+    vertical-align: middle;
+    line-height: 1;
+    font-size: .90rem;
+}
+
+.price {
+    display: inline-block;
+    text-align: right;
+}
+
+.price h6 {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    
+}
+
+.price span {
+    border-radius: 2px;
+    padding: 0.25em 0.5rem;
+    font-weight: 700;
+    font-size: .6rem;
+    letter-spacing: .3px;
+}
+
+.instock {
+    background: #C8E6C9;
+    color: #256029;
+}
+
+.lowstock {
+    background: #FEEDAF;
+    color: #8a5340;
+}
+
+.outofstock {
+    background: #FFCDD2;
+    color: #c63737;
+}
