@@ -13,7 +13,7 @@ body {
 }
 
 .orderlist {
-    max-width: 1400px;
+    max-width: 1200px;
     max-height: 620px;
     width: 100%;
     height: 100%;
@@ -27,6 +27,7 @@ body {
     width: 10%;
     height: 100%;
     padding: 10px;
+    margin: auto;
 }
 
 .orderlist-buttons{
@@ -55,15 +56,15 @@ body {
     position: relative;
     width: 100%;
     height: 10%;
-    padding: 1.6%;
-    /* border: 1px solid black; */
+    padding: 1.8%;
+    border: 1px solid black;
 }
 
 .orderlist-filter-container {
     width: 100%;
-    height: 10%;
-    padding: 1.6%;
-    /* border: 1px solid black; */
+    height: 12%;
+    padding: 2%;
+    border: 1px solid black;
 }
 
 .orderlist-filter {
@@ -71,7 +72,7 @@ body {
 }
 
 .orderlist-filter input {
-    width: 70.604rem;
+    width: 100%;
     height: 2rem;
     margin: 0;
     padding-right: 2rem;
@@ -87,7 +88,7 @@ body {
 .orderlist-list {
     width: 100%;
     height: 78%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     padding-top: 1rem;
     padding-bottom: 1rem;
     overflow-y: auto;
@@ -95,9 +96,7 @@ body {
 
 .list-articles {
     height: 100%;
-    /* border: 1px solid black; */
     padding: 1.6%;
-    /* padding: 1rem 1.5rem 1rem 1.5rem; */
     margin: auto;
     align-items: center;
 }
@@ -108,7 +107,6 @@ body {
     padding: .438rem;
     align-items: center;
     position: relative;
-    border: 1px solid black;
 }
 
 .article-image {
@@ -126,6 +124,7 @@ body {
     display: inline-block;
     position: absolute;
     width: 80%; 
+    padding-top: .6rem;
 }
 
 .article-name {
@@ -137,15 +136,33 @@ body {
 }
 
 .article-category {
-    display: block;
+    display: inline-block;
     line-height: 1;
     font-size: .75rem;
-}
-
-.article-description i{
-    
-}
+} 
 
 .article-price {
     display: inline-block;
+}
+
+.price-badge {
+    float: right;
+    font-size: .85rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-125%);
+}
+
+.instock {
+    border-radius: 2px;
+    padding: 0.25em 0.5rem;
+    font-weight: 700;
+    font-size: .6rem;
+    letter-spacing: .3px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background: #C8E6C9;
+    color: #256029;
 }
