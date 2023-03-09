@@ -11,17 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/ts/main.js"></script>
+    <script defer src="/assets/ts/main.js"></script>
 </head>
 
 <body>
     <div class="orderlist">
         <div class="orderlist-controls">
-            <div class="orderlist-buttons">
-                <button>Arriba</button>
-                <button>Inicio</button>
-                <button>Abajo</button>
-                <button>Fin</button>
+            <div class="orderlist-buttons" >
+                <button><i class="bi bi-caret-up-fill"></i></button>
+                <button><i class="bi bi-caret-up"></i></button>
+                <button><i class="bi bi-caret-down"></i></button>
+                <button><i class="bi bi-caret-down-fill"></i></button>
             </div>
         </div>
         <div class="orderlist-container">
@@ -35,21 +35,21 @@
                 </div>
             </div>
             <div class="orderlist-list">
-                <div class="list-articles">
-                    <div class="article">
-                        <div class="article-image">
+                <div class="list-articles" id="listArticles">
+                    <!-- <div class="article" id="article">
+                        <div class="article-image" id="articleImage">
                             <img src="https://primefaces.org/cdn/primeng/images/demo/product/bamboo-watch.jpg">
                         </div>
-                        <div class="article-description">
-                            <span class="article-name">Bamboo Watch</span>
+                        <div class="article-description" id="articleDescription">
+                            <span class="article-name" id="articleName">Bamboo Watch</span>
                             <i class="bi bi-tag"></i>
-                            <span class="article-category">Accessories</span>
+                            <span class="article-category" id="articleCategory">Accessories</span>
                         </div>
-                        <div class="article-price">
-                            <span class="price-badge">$65</span>
-                            <span class="instock">INSTOCK</span>
+                        <div class="article-price" id="articlePrice">
+                            <span class="price-badge" id="priceBadge">$65</span>
+                            <span class="instock" id="articleInstock">INSTOCK</span>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
